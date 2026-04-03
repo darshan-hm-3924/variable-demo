@@ -12,4 +12,4 @@ jobs:
           env: 
             age: 10
           run: |
-            echo "my name is ${{env.name}} ${{env.lastname}} and age is ${{env.age}}}"
+            echo "my name is ${{env.name}} ${{env.lastname}} and age is ${{env.age}}} and my pin is ${{secrets.pin}}"
