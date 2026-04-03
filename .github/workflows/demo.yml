@@ -1,16 +1,16 @@
 name: "variable access"
 on: push
-evn: 
-    name: "Darshan"
+env: 
+  name: "Darshan"
 jobs:
   variable-access:
       run-on: ubuntu-latest
-      evn: 
+      env: 
         lastname: "H M"
       steps:
         - name: step variable access
-          evn: 
+          env: 
             age: 10
         - name: run code
           runs: |
-            echo "my name is ${{evn.name}} ${{evn.lastname} and age is ${{evn.age}}}"
+            echo "my name is ${{env.name}} ${{env.lastname} and age is ${{env.age}}}"
