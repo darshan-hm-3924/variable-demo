@@ -4,13 +4,12 @@ env:
   name: "Darshan"
 jobs:
   variable-access:
-      run-on: ubuntu-latest
+      runs-on: ubuntu-latest
       env: 
         lastname: "H M"
       steps:
         - name: step variable access
           env: 
             age: 10
-        - name: run code
-          runs: |
+          run: |
             echo "my name is ${{env.name}} ${{env.lastname} and age is ${{env.age}}}"
